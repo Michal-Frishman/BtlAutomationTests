@@ -46,6 +46,7 @@ public class BaseTest {
     }
 
     @Test
+    @Description("בדיקת חישוב סכום דמי לידה ליום")
     public void testSearch() throws InterruptedException {
         HomePage home = new HomePage(driver);
         home.Search("חישוב סכום דמי לידה ליום");
@@ -56,6 +57,7 @@ public class BaseTest {
     }
 
     @Test
+    @Description("בדיקת סניפים וערוצי שירות סניף אשדוד")
     public void testBranches() {
         HomePage home = new HomePage(driver);
         BranchesPage branchesPage = home.getBranchesPage();
